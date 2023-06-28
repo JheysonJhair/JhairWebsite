@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhair</title>
+    <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/saga-blue.css">
+    <script src="https://kit.fontawesome.com/b3f17f1dac.js" crossorigin="anonymous"></script>   
+    <!-- Redes sociales font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/saga-blue.css">
+    <script src="https://kit.fontawesome.com/b3f17f1dac.js" crossorigin="anonymous"></script>
+    <!-- Logotipo ICO-->
+    <link rel="shortcut icon" href="img/Logo.ico" type="image/x-icon">
+    <!-- Estilos generales css-->
+    <link rel="stylesheet" href="css/styleIndex.css">
+    
+</head>
+<body class="hidden">
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <img src="img/Logo.png" alt="">
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#" id="enlace-inicio" class="btn-header">INICIO</a> </li>
+                    <li><a href="#" id="enlace-sobremi" class="btn-header">SOBRE MI</a></li>
+                    <li><a href="#" id="enlace-skills" class="btn-header">SKILLS</a> </li>
+                    <li><a href="#" id="enlace-servicios" class="btn-header">SERVICIOS</a> </li>
+                    <li><a href="#" id="enlace-portafolios" class="btn-header">PORTAFOLIO</a> </li>
+                    <li><a href="#" id="enlace-contacto" class="btn-header">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="hireMe__button pt-4">
+                <a href="mailTo:jhair2003unamba.com" aria-label="Enviar mensaje al correo"
+                    class="aa cursor-pointer no-underline border-round-lg text-xl xl:text-sm">Contratame</a>
+            </div>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!--HOME PAGE -->
+    <div class="left__content container">
+        <section id="home"
+            class="div_2 home__page flex align-items-center justify-content-center xl\:justify-content-between grid grid-nogutter gap-4">
+            <div class="divv col-12 xl:col-6">
+                <div class="message__bubble triangle mb-4 md:mb-2">
+                    <div class="message__text ">
+                        <p>Hola, Yo soy</p>
+                    </div>
+                </div>
+                <div class="es">
+                    <h1 class="h11 text-3xl sm:text-5xl md:text-7xl">Mr. Jheyson Jhair</h1>
+                    <p class="txt p1">Programador - desarrollador web y diseñador UI/UX<span>&#160;</span></p>
+                </div>
+
+                <div class="  home__buttons flex align-items-center gap-2 mt-6">
+                    <a href="./assets/CURRICULUM.pdf" aria-label="Descargar curriculum"
+                        class="mess  aa" download>Descargar CV</a>
+                    <button id="mitrabajo" aria-label="Deslizar a sección portafolio para mostrar mis trabajos"
+                        class="mess cursor-pointer border-round-lg">Mi trabajo</button>
+                </div>
+            </div>
+            <div class="imgg right__content col-9 sm:col-6 xl:col-5">
+                <img clas="image"src="img/perfil.png" alt="Foto perfil" width="80" height="80">
+            </div>
+        </section>
+    </div>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p class="t2"><span>Hola!  soy Jheyson Jhair Arone Angeles.</span>  Soy un desarrollador web y programador apasionado por crear soluciones digitales excepcionales. Mi objetivo es proporcionar experiencias intuitivas y atractivas a través de la combinación de diseño estético y funcionalidad impecable.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            10-08-2003
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +51 983 805 438
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            jhair2003unamba@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.jhair.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Abancay - Apurímac
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>DESARROLLADOR FRONTEND</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-pencil"></i>
+                            <span>DIBUJO</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-laptop"></i>
+                            <span>PROGRAMAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-pen-nib"></i>
+                            <span>DISEÑO</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button class="cv" >
+                <a href="./assets/CURRICULUM.pdf" aria-label="Descargar curriculum"
+                         download>Descargar CV</a> <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>35%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>92%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Angular</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>51%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React js</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenedor servicios-->
+    <section class="galery" id="servicios">
+        <div class="contenedor">
+            <h3 class="titulo">Servicios</h3>
+            <p class="after">Preseto los diferentes servicios que ofrezco.</p>
+
+            <div class="galeria-port">
+                <div class="imagen-port">
+                    <img src="img/s_html.png" alt="">
+                    <div class="hover-galeria">
+                        <img src="img/IconoProyecto.png" alt="">
+                        <p>HTML</p>                   
+                    </div>
+                </div>
+
+                <div class="imagen-port">
+                    <img src="img/s_css.png" alt="">
+                    <div class="hover-galeria">
+                        <img src="img/IconoProyecto.png" alt="">
+                        <p>CSS</p>
+                    </div>
+                </div>
+
+                <div class="imagen-port">
+                    <img src="img/s_js.png" alt="">
+                    <div class="hover-galeria">
+                        <img src="img/IconoProyecto.png" alt="">
+                        <p>JAVASCRIPT</p>
+                    </div>
+                </div>
+
+                <div class="imagen-port">
+                    <img src="img/s_ts.png" alt="">
+                    <div class="hover-galeria">
+                        <img src="img/IconoProyecto.png" alt="">
+                        <p>TYPESCRIPT</p>
+                    </div>
+                </div>
+
+                <div class="imagen-port">
+                    <img src="img/s_an.png" alt="">
+                    <div class="hover-galeria">
+                        <img src="img/IconoProyecto.png" alt="">
+                        <p>Angular</p>
+                    </div>
+                </div>
+
+                <div class="imagen-port">
+                    <img src="img/s_react.png" alt="">
+                    <div class="hover-galeria">
+                        <img src="img/IconoProyecto.png" alt="">
+                        <p>REACT JS</p>
+                    </div>
+                </div>
+
+                <div class="imagen-port">
+                    <img src="img/s_java.png" alt="">
+                    <div class="hover-galeria">
+                        <img src="img/IconoProyecto.png" alt="">
+                        <p>JAVA</p>
+                    </div>
+                </div>
+
+                <div class="imagen-port">
+                    <img src="img/s_php.png" alt="">
+                    <div class="hover-galeria">
+                        <img src="img/IconoProyecto.png" alt="">
+                        <p>PHP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenedor portafolio-->
+    <section class="w" id="portafolios">
+        <section class="contenedor" id="trabajo">
+            <h3>Portafolio</h3>
+            <p class="after">Hacemos de algo simple algo extraordinario</p>
+        
+            <div class="botones-work">
+                <ul>
+                    <li class="filter active" data-nombre='todos'>Todos</li>
+                    <li class="filter" data-nombre='diseño'>Diseño</li>
+                    <li class="filter" data-nombre='programacion'>Programacion</li>
+                    <li class="filter" data-nombre='marketing'>Marketing</li>
+                </ul>
+            </div>
+            <div class="galeria-work">
+                <div class="cont-work programacion">
+                    <div class="img-work">
+                        <img src="img/Programacion1.jpeg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Java</h4>
+                    </div>
+                </div>
+        
+                <div class="cont-work programacion">
+                    <div class="img-work">
+                        <img src="img/Programacion2.jpeg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>C++</h4>
+                    </div>
+                </div>
+        
+                <div class="cont-work programacion">
+                    <div class="img-work">
+                        <img src="img/Programacion3.jpeg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Phyton</h4>
+                    </div>
+                </div>
+        
+                <div class="cont-work diseño">
+                    <div class="img-work">
+                        <img src="img/Diseño1.jpeg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Diseño 3D</h4>
+                    </div>
+                </div>
+        
+                <div class="cont-work diseño">
+                    <div class="img-work">
+                        <img src="img/Diseño2.jpeg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Diseño Web</h4>
+                    </div>
+                </div>
+        
+                <div class="cont-work diseño">
+                    <div class="img-work">
+                        <img src="img/Diseño3.jpeg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Diseño corporativo</h4>
+                    </div>
+                </div>
+        
+                <div class="cont-work marketing">
+                    <div class="img-work">
+                        <img src="img/Marketing1.jpeg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Marketing Digital</h4>
+                    </div>
+                </div>
+        
+                <div class="cont-work marketing">
+                    <div class="img-work">
+                        <img src="img/Marketing2.jpeg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Marketing Offline</h4>
+                    </div>
+                </div>
+        
+                <div class="cont-work marketing">
+                    <div class="img-work">
+                        <img src="img/Marketing3.jpeg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Marketing de contenidos</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Bella Vista Baja
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: +51 983 805 438
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: www.jhair.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba" id="enlace-arriba" class="btn-header">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/JheysonJhair.AroneAngeles.2003/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter" target="_blank"></i></a>
+            <a href="#"><i class="fa-brands fa-skype" target="_blank"></i></a>
+            <a href="https://www.instagram.com/jheyson_jhair2003/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss" target="_blank"></i></a>
+        </div>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/scroll.js"></script>
+</body>
+</html>
