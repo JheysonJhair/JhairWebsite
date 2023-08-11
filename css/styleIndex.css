@@ -301,6 +301,7 @@ h1{
 }
 /*title*/
 .sobremi h2{
+    color: #fff;
     font-size: var(--size_titulos)  ;
     font-family: var(--font_title1);
     text-align: center;
@@ -308,6 +309,7 @@ h1{
 }
 /*parrafo descripcion*/
 .sobremi .t2{
+    text-align: justify;
     font-size:var(--size_parrafos) ;
     font-family:var(--font_title2);
 }
@@ -333,6 +335,7 @@ h1{
 }
 /*subtitulo*/
 .sobremi .fila .col h3{
+    color: #fff;
     font-size: 28px;
     font-family: var(--font_title1);
     margin-bottom: 25px;
@@ -356,14 +359,23 @@ h1{
 /*span desarrollador*/
 .sobremi .fila .col ul li span{
     background-color: #1CB698;
+    color: #fff;
+    font-family: var(--font_title1);
     padding: 8px;
-    font-weight: bold;
     border-radius: 5px;
 }
 /*conetenedor intereses*/
 .sobremi .fila .col .contenedor-intereses{
     display: flex;
     flex-wrap: wrap;
+}
+.sobremi li a{
+  text-decoration: none;
+  color: #f2f2f2cb;
+}
+.sobremi li a:hover{
+  text-decoration: none;
+  color: #1CB698;
 }
 /*cuadros*/
 .sobremi .fila .col .contenedor-intereses .interes{
@@ -416,6 +428,7 @@ h1{
 .sobremi button:hover .overlay{
     width: 100%;
 }
+
 /* ----------------------------------------------*/
 /*                 SKILLS                      */
 /* ----------------------------------------------*/
@@ -458,6 +471,8 @@ h1{
     font-weight: bold;
     display: block;
     margin-bottom: 10px;
+    font-size: 18px;
+    color: #f2f2f2e3;
 }
 /*barra*/
 .skills .skill .barra-skill{
@@ -490,19 +505,39 @@ h1{
 }
 .cv a{
   font-weight: 300;
+  font-family: var(--font_title1);
   text-decoration: none;
   border-bottom: 3px solid transparent;
   color: #ffffff;
 }
 /*clases en javascript */
+.skills .skill .java{
+  width: 0%;
+  animation: 2s java forwards;
+}
+@keyframes java {
+  0%{width: 0%;}
+  100%{width: 85%;}
+}
+/**/
 .skills .skill .javascript{
     width: 0%;
     animation: 2s javascript forwards;
 }
 @keyframes javascript {
     0%{width: 0%;}
-    100%{width: 35%;}
+    100%{width: 75%;}
 }
+/**/
+.skills .skill .typescript{
+  width: 0%;
+  animation: 2s typescript forwards;
+}
+@keyframes typescript {
+  0%{width: 0%;}
+  100%{width: 85%;}
+}
+/**/
 .skills .skill .htmlcss{
     width: 0%;
     animation: 2s htmlcss forwards;
@@ -511,6 +546,7 @@ h1{
     0%{width: 0%;}
     100%{width: 92%;}
 }
+/**/
 .skills .skill .photoshop{
     width: 0%;
     animation: 2s photoshop forwards;
@@ -519,22 +555,43 @@ h1{
     0%{width: 0%;}
     100%{width: 75%;}
 }
+/**/
 .skills .skill .wordpress{
     width: 0%;
     animation: 2s wordpress forwards;
 }
 @keyframes wordpress {
     0%{width: 0%;}
-    100%{width: 51%;}
+    100%{width: 85%;}
 }
+/**/
 .skills .skill .drupal{
     width: 0%;
     animation: 2s drupal forwards;
 }
 @keyframes drupal {
     0%{width: 0%;}
-    100%{width: 31%;}
+    100%{width: 40%;}
 }
+/**/
+.skills .skill .node{
+  width: 0%;
+  animation: 2s node forwards;
+}
+@keyframes node {
+  0%{width: 0%;}
+  100%{width: 50%;}
+}
+/**/
+.skills .skill .net{
+  width: 0%;
+  animation: 2s net forwards;
+}
+@keyframes net {
+  0%{width: 0%;}
+  100%{width: 40%;}
+}
+/*---------------------------*/
 .skills .skill .comunicacion{
     width: 0%;
     animation: 2s comunicacion forwards;
@@ -543,6 +600,7 @@ h1{
     0%{width: 0%;}
     100%{width: 80%;}
 }
+/**/
 .skills .skill .trabajo{
     width: 0%;
     animation: 2s trabajo forwards;
@@ -551,6 +609,7 @@ h1{
     0%{width: 0%;}
     100%{width: 80%;}
 }
+/**/
 .skills .skill .creatividad{
     width: 0%;
     animation: 2s creatividad forwards;
@@ -559,6 +618,7 @@ h1{
     0%{width: 0%;}
     100%{width: 95%;}
 }
+/**/
 .skills .skill .dedicacion{
     width: 0%;
     animation: 2s dedicacion forwards;
@@ -567,6 +627,7 @@ h1{
     0%{width: 0%;}
     100%{width: 75%;}
 }
+/**/
 .skills .skill .proyect{
     width: 0%;
     animation: 2s proyect forwards;
@@ -592,8 +653,9 @@ h1{
   }
   /*comentario*/
   .galery p{
+    color: #1CB698;
     font-family: var(--font_title1);
-    font-size: var(--size_parrafos);
+    font-size: 22px;
   }
   /*contenedor geleria fotos*/
   .galeria-port{
@@ -661,8 +723,9 @@ h1{
   }
   /*subtitle*/
   .w p{
+    color:#1CB698;
       font-family: var(--font_title1);
-      font-size: var(--size_parrafos);
+      font-size: 22px;
   }
   /*fila botones*/
   .botones-work{
@@ -675,6 +738,7 @@ h1{
     display: inline-block;
     text-align: center;
     margin-left: 8px;
+    font-size: 20px;
     margin-bottom: var(--espacios-contenido);
     padding: 6px 12px;
     border: 1px solid var(--secondary-bg-color);
@@ -805,12 +869,12 @@ h1{
 /*cuadro informacion*/
 .contacto .col .info{
     position: absolute;
-    top: 40%;
+    top: 35%;
     background-color: #252A2E;
     padding: 20px;
 
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 40%;
+    transform: translate(-30%, -48%);
 }
 /*lista*/
 .contacto .col .info ul{
@@ -854,7 +918,12 @@ footer .redes a{
     line-height: 42px;
     margin: 40px 5px;
     font-size: 20px;
-    transition: .3s;
+    transition: transform 0.3s ease-in-out;
+}
+footer .redes a:hover{
+  color: #1CB698;
+  border: 1px solid #1CB698;
+  transform: scale(1.1);
 }
 /*arriba*/
 footer .arriba{
