@@ -35,8 +35,8 @@
                 </ul>
             </nav>
             <div class="hireMe__button pt-4">
-                <a href="mailTo:jhair2003unamba.com" aria-label="Enviar mensaje al correo"
-                    class="aa cursor-pointer no-underline border-round-lg text-xl xl:text-sm">Contratame</a>
+                <a href="mailto:jhair2003unamba.com" aria-label="Enviar mensaje al correo" id="typing-link"
+                   class="aa cursor-pointer no-underline  text-xl xl:text-sm hover-scale-effect">Contratame</a>
             </div>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
@@ -55,14 +55,14 @@
                 </div>
                 <div class="es">
                     <h1 class="h11 text-3xl sm:text-5xl md:text-7xl">Mr. Jheyson Jhair</h1>
-                    <p class="txt p1">Programador - desarrollador web y diseñador UI/UX<span>&#160;</span></p>
-                </div>
+                    <p id="typing-text" class="txt p1">Programador - desarrollador web y diseñador UI/UX<span>&#160;</span></p>
+                </div>                
 
-                <div class="  home__buttons flex align-items-center gap-2 mt-6">
+                <div class="home__buttons flex align-items-center gap-2 mt-6">
                     <a href="./assets/CURRICULUM.pdf" aria-label="Descargar curriculum"
                         class="mess  aa" download>Descargar CV</a>
                     <button id="mitrabajo" aria-label="Deslizar a sección portafolio para mostrar mis trabajos"
-                        class="mess cursor-pointer border-round-lg">Mi trabajo</button>
+                        class="mess cursor-pointer">Mi trabajo</button>
                 </div>
             </div>
             <div class="imgg right__content col-9 sm:col-6 xl:col-5">
@@ -84,7 +84,7 @@
                     <ul>
                         <li>
                             <strong>Cumpleaños</strong>
-                            10-08-2003
+                            10/08/2003
                         </li>
                         <li>
                             <strong>Teléfono</strong>
@@ -92,15 +92,23 @@
                         </li>
                         <li>
                             <strong>Email</strong>
-                            jhair2003unamba@gmail.com
+                            jheysonjhairpro@gmail.com
                         </li>
                         <li>
                             <strong>Website</strong>
-                            www.jhair.com
+                            jheysonjhairpro.ccontrolz.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            jheysonjhairpro.ccontrolz.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            jheysonjhairpro.ccontrolz.com
                         </li>
                         <li>
                             <strong>Dirección</strong>
-                            Abancay - Apurímac
+                            Perú
                         </li>
                         <li>
                             <strong>Cargo</strong>
@@ -481,6 +489,35 @@
             <a href="#"><i class="fa-solid fa-rss" target="_blank"></i></a>
         </div>
     </footer>
+    <script>
+        const textElement = document.getElementById('typing-text');
+        const originalText = textElement.textContent.trim();
+        textElement.textContent = ''; // Limpiamos el contenido original
+    
+        let currentIndex = 0;
+    
+        function typeNextCharacter() {
+            if (currentIndex < originalText.length) {
+                textElement.textContent += originalText[currentIndex];
+                currentIndex++;
+                setTimeout(typeNextCharacter, Math.random() * 200 + 50); // Ajusta el tiempo para variar la velocidad
+            } else {
+                // Cuando se completa el efecto, esperamos 5 segundos y luego reiniciamos el proceso
+                setTimeout(() => {
+                    textElement.textContent = '';
+                    currentIndex = 0;
+                    typeNextCharacter();
+                }, 5000); // Esperar 5000 milisegundos = 5 segundos
+            }
+        }
+    
+        // Comenzar el efecto de máquina de escribir cuando la página esté cargada
+        window.addEventListener('load', () => {
+            typeNextCharacter();
+        });
+    </script>
+    
+    
     <script src="js/jquery.js"></script>
     <script src="js/script.js"></script>
     <script src="js/scroll.js"></script>

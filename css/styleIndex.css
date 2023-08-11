@@ -26,7 +26,7 @@
   }
 /*Cuerpo*/
 body {
-
+    color: #ffffffbc;
     font-family: var(--font_a);
     color: var(--color_font_title);
     height: 200px;
@@ -59,33 +59,7 @@ body {
     background: var(--secondary-bg-color);
     margin-bottom: var(--espacios-contenido_line);
   }
-/*Animacion escribir*/
-.es{
-    margin: auto;
-    display: table;
-}
-.p1{
-    position: relative;
-    font-size: 80px;
-}
-.p1 span{
-    position:absolute;
-    right: 0;
-    width: 0;
-    background: linear-gradient(to top, rgba(30, 35, 38, 0.781), rgba(30, 35, 38, 0.781)),
-    url();
-    animation: maquina2 10s steps(50) infinite ;
-    animation-delay: 5s;
-}
 
-@keyframes maquina2{
-  from{
-      width: 100%;
-
-  }to{
-      width: 0;
-  }
-}
 /*Title*/
 h1{
     float: left;
@@ -131,7 +105,8 @@ h1{
 }
 .contenedor-header header nav ul li a{
   text-align: none;
-  color: #fff;
+  color: #ffffffbc;
+  font-family: var(--font_title1);
   margin: 0 15px;
   padding: 3px;
   transition: .5s;
@@ -187,25 +162,28 @@ h1{
 
 
   /* Boton contratame*/
-  .hireMe__button a {
-    background-color: var(--secondary-bg-color);
-    color: var(--color_font_title);
+  
+  .hireMe__button {
+    display: inline-block;
+}
+
+.hireMe__button a {
+    display: inline-block;
+    background-color: #00886e;
+    color: white; /* Color de texto blanco */
     padding: 1rem 1.5rem;
+    font-family: var(--font_title1);
     font-size: 20px;
     font-weight: 200;
     text-decoration: none;
-    border-bottom: 3px solid transparent;
-    color: #ffffff;
-    border-width: 0;
+    border: none;
     border-radius: 10px;
-  }
-  /* texto boton contratame*/
-  .aa{
-      font-size: 500px;
-      text-align: center;
-      text-decoration: none;
-  }
+    transition: transform 0.3s ease-in-out; /* Transición suave para la transformación */
+}
 
+.hireMe__button a:hover {
+    transform: scale(1.05); /* Efecto de agrandamiento */
+}
 /* ----------------------------------------------*/
 /*                    HOME                     */
 /* ----------------------------------------------*/
@@ -277,30 +255,31 @@ h1{
     text-align: center;
     font-family: var(--font_title1);
 }
-/*pointer mi trabajo*/
-.mess{
-    cursor: pointer;
-    font-family: var(--font_title1);
-}
+
 /*contenedor botones home*/
 .home__buttons button {
+  font-family: var(--font_title1);
     padding: 1rem 2rem;
     color: var(--color_font_title);
 }
 /*enlaces botones*/
 .home__buttons a {
     background-color: var(--secondary-bg-color);
-    font-size: 0.9rem;
+    font-family: var(--font_title1);
+    font-size: 18px;
     color: #fff;
     padding: 1rem 1.5rem;
     border-radius: 10px;
+}
+.cursor-pointer{
+  font-family: var(--font_title1);
+  cursor: pointer;
 }
 /*boton mi trabajo*/
 .home__buttons button {
     background-color: transparent;
     border: 1px solid #fff;
     border-width: thin;
-    font-family: var(--font);
     font-size: 0.9rem;
     color: #fff;
     padding: 1rem 1.5rem;
@@ -312,7 +291,7 @@ h1{
 /*fondo sobre mi contenedor*/
 .sobremi{
     background-color: #17191a;
-    color: #fff;
+    color: #f2f2f2cb;
     padding: 50px 20px;
 }
 /*contenedor inteerno*/
