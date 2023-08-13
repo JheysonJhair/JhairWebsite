@@ -22,6 +22,9 @@ document.addEventListener("DOMContentLoaded", function () {
     "Reproductor multimedia diseñado para satisfacer las necesidades de los amantes de la música y el video en una sola plataforma incluyendo un descargador.",
     "Plataforma en línea que revoluciona la forma en que se venden y gestionan los boletos para el comedor universitario.",
     "Plataforma en línea que combina tecnología avanzada y una experiencia interactiva para permitir a los clientes crear y cotizar su automóvil ideal de manera personalizada.",
+    "...",
+    "...",
+    "...",
     "Plataforma de software de escritorio que tiene como objetivo mejorar la eficiencia y la precisión en la gestión de encomiendas para empresas de transporte y logística.",
     "Herramienta de software de escritorio diseñada para realizar cálculos y conversiones de direcciones IP o tambien la configuración de redes.",
 
@@ -32,6 +35,9 @@ document.addEventListener("DOMContentLoaded", function () {
     ["../img/font/SOUNDTHEZER.png"],
     ["../img/font/SALEOFTICKET.png"],
     ["../img/font/CO.png"],
+    ["../img/font/"],
+    ["../img/font/"],
+    ["../img/font/"],
     ["../img/font/M.jpeg"],
     ["../img/font/IP.png"],
     // Agrega más rutas de imágenes para cada elemento de la galería
