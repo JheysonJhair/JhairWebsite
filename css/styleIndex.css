@@ -849,7 +849,10 @@ header {
   font-family: var(--font_title1);
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-  z-index: 1;
+  z-index: 0;
+}
+.img-caption {
+  cursor: pointer;
 }
 /* Texto */
 .textos-work {
@@ -961,6 +964,81 @@ header {
   display: inline-block;
   margin-right: 20px;
 }
+
+/* modal*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  background-color: #252a2e;
+  width: 60%;
+  height: 90%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Agrega esta línea para centrar horizontalmente */
+}
+
+.modal-content p{
+  color: #bdbdbd;
+  text-align: justify;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 17px;
+
+}
+.modal-t{
+  text-align: left;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 40px;
+  font-family: var(--font_title1);
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
+}
+/* Ajusta el estilo para las imágenes dentro del modal */
+.modal-images img {
+  width: 100%;
+
+  display: block;
+  margin: 0 auto;
+}
+
+/* Estilo para los botones dentro del modal */
+.modal-content button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #00886e;
+  color: #fff;
+  font-size: 20px;
+  font-family: var(--font_title1);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
 /* ----------------------------------------------*/
 /*                    FOOTER                     */
 /* ----------------------------------------------*/
