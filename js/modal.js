@@ -40,6 +40,10 @@ document.addEventListener("DOMContentLoaded", function () {
     ["../img/font/"],
     ["../img/font/M.jpeg"],
     ["../img/font/IP.png"],
+    ["../img/font/"],
+    ["../img/font/TMD.jpeg"],
+    ["../img/font/PM.png"],
+    ["../img/font/"],
     // Agrega más rutas de imágenes para cada elemento de la galería
   ];
 
