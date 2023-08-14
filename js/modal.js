@@ -7,44 +7,50 @@ document.addEventListener("DOMContentLoaded", function () {
   const galleryItems = document.querySelectorAll(".galeria-work .cont-work");
   const galleryArray = Array.from(galleryItems);
 
-  // Lista de enlaces correspondientes a cada elemento de la galería
   const galleryLinks = [
     "https://github.com/JheysonJhair/FT_MusicVideoPlayer-Angular",
     "https://github.com/JheysonJhair/SaleOfTicket-Angular",
     "https://github.com/JheysonJhair/",
+    "https://github.com/JheysonJhair/",
+    "https://github.com/JheysonJhair/Presupuesto-Angular",
+    "https://github.com/JheysonJhair/VideoPlayer-Angular",
     "https://github.com/JheysonJhair/SistemaEncomienda-Java",
     "https://github.com/JheysonJhair/IPCalculator-Java",
-    // Agrega más enlaces para cada elemento de la galería
+    "https://github.com/JheysonJhair/SistemaVenta-Java",
+    "https://github.com/JheysonJhair/",
+    "https://github.com/JheysonJhair/",
+    "",
   ];
 
-  // Lista de textos correspondientes a cada elemento de la galería
   const galleryTexts = [
     "Reproductor multimedia diseñado para satisfacer las necesidades de los amantes de la música y el video en una sola plataforma incluyendo un descargador.",
     "Plataforma en línea que revoluciona la forma en que se venden y gestionan los boletos para el comedor universitario.",
     "Plataforma en línea que combina tecnología avanzada y una experiencia interactiva para permitir a los clientes crear y cotizar su automóvil ideal de manera personalizada.",
-    "...",
-    "...",
-    "...",
+    "Empresa especializada en el desarrollo de software a medida. Nuestro enfoque se basa en la creación de soluciones tecnológicas personalizadas que atiendan las necesidades del cliente.",
+    "EIPRES es una aplicación diseñada para ayudarte a calcular y gestionar tus finanzas personales de manera eficiente.",
+    "Plataforma de reproducción de videos perfecta para disfrutar de tu lista de reproducción de videos favoritos",
     "Plataforma de software de escritorio que tiene como objetivo mejorar la eficiencia y la precisión en la gestión de encomiendas para empresas de transporte y logística.",
     "Herramienta de software de escritorio diseñada para realizar cálculos y conversiones de direcciones IP o tambien la configuración de redes.",
+    "Plataforma de venta en línea que combina tecnología avanzada con una interfaz amigable para proporcionar a los usuarios una experiencia de compra sin complicaciones.",
+    "THE MINIMUN DANGER es un juego de plataformas para todos los amantes de las aventuras clásicas. Inspirado por el icónico Mario Bros",
+    "PAC-MAN Retro Adventure es un juego para Android que captura la esencia y la emoción del icónico PAC-MAN original.",
+    "...",
 
   ];
 
-  // Lista de rutas de las imágenes correspondientes a cada elemento de la galería
   const galleryImages = [
     ["../img/font/SOUNDTHEZER.png"],
     ["../img/font/SALEOFTICKET.png"],
-    ["../img/font/CO.png"],
-    ["../img/font/"],
-    ["../img/font/"],
-    ["../img/font/"],
-    ["../img/font/M.jpeg"],
+    ["../img/font/JAMDER.png"],
+    ["../img/font/JHEWEKEEND.png"],
+    ["../img/font/EIPRES.png"],
+    ["../img/font/PLAYVIDEO.png"],
+    ["../img/font/MARVISUR.png"],
     ["../img/font/IP.png"],
-    ["../img/font/"],
+    ["../img/font/SIVEN.png"],
     ["../img/font/TMD.jpeg"],
-    ["../img/font/PM.png"],
+    ["../img/font/PACMAN.png"],
     ["../img/font/"],
-    // Agrega más rutas de imágenes para cada elemento de la galería
   ];
 
   galleryArray.forEach((item, index) => {
@@ -82,8 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const imagePaths = galleryImages[currentIndex];
     const imgElement = document.createElement("img");
-    imgElement.src = "seets/" + imagePaths[0]; // Utilizamos solo la primera imagen
-    imgElement.classList.add("modal-image", "modal-image-large"); // Nuevas clases agregadas
+    imgElement.src = "seets/" + imagePaths[0]; 
     modalImages.appendChild(imgElement);
 
     const linkButton = document.createElement("a");

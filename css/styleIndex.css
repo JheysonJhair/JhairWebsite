@@ -833,7 +833,7 @@ header {
   height: 100%;
   width: 100%;
   filter: brightness(0.7) blur(2px);
-  transition: filter 0.3s; /* Agrega una transición suave */
+  transition: filter 0.3s; 
   object-fit: cover;
 }
 .img-work img:hover {
@@ -990,19 +990,18 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /* Agrega esta línea para centrar horizontalmente */
+  align-items: center; 
 }
 
-.modal-content p{
+.modal-content p {
   color: #bdbdbd;
   text-align: justify;
   margin-top: 15px;
   margin-left: 20px;
   margin-right: 20px;
   font-size: 17px;
-
 }
-.modal-t{
+.modal-t {
   text-align: left;
   margin-bottom: 10px;
   color: #ffffff;
@@ -1018,7 +1017,7 @@ header {
   color: #aaa;
   cursor: pointer;
 }
-/* Ajusta el estilo para las imágenes dentro del modal */
+
 .modal-images img {
   width: 100%;
 
@@ -1026,7 +1025,6 @@ header {
   margin: 0 auto;
 }
 
-/* Estilo para los botones dentro del modal */
 .modal-content button {
   margin-top: 10px;
   padding: 10px 15px;
@@ -1397,7 +1395,8 @@ footer .arriba {
     margin-top: 120px;
   }
   .imgg {
-    width: 340px;
+    margin-top: 30px;
+    width: 335px;
     height: 340px;
     margin-left: 0px;
     margin-bottom: 10px;
@@ -1406,7 +1405,8 @@ footer .arriba {
     font-size: 15px;
   }
   .h11 {
-    font-size: 52px;
+    margin-top: 24px;
+    font-size: 47px;
   }
   .cont-work {
     width: 50%;
@@ -1451,6 +1451,11 @@ footer .arriba {
   }
   .subtitle2 {
     --parrafos: 15px;
+  }
+  .contacto .col .info {
+    top: 48%;
+    left: 20%;
+    transform: translate(-10%, -48%);
   }
 }
 /* MENOR A 500PX*/
