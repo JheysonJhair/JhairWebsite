@@ -1383,6 +1383,16 @@ footer .arriba {
 }
 /* MENOR A 500PX*/
 @media screen and (max-width: 500px) {
+  
+.modal-t {
+  font-size:20px ;
+}
+.modal-content {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  width: 100%;
+  height: auto;
+}
   .hireMe__button a {
     padding: 0.5rem 1rem;
     border-radius: 7px;
