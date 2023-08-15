@@ -1411,7 +1411,7 @@ footer .arriba {
     margin-bottom: 10px;
   }
   .txt {
-    font-size: 15px;
+    font-size: 12px;
   }
   .h11 {
     margin-top: 24px;
@@ -1468,9 +1468,6 @@ footer .arriba {
   }
   .sobremi .fila .col ul li strong {
     width: 70px;
-  }
-  .p1{
-    font-size: 12px;
   }
   .column-container {
     display: flex;
