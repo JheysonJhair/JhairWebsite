@@ -1383,7 +1383,6 @@ footer .arriba {
 }
 /* MENOR A 500PX*/
 @media screen and (max-width: 500px) {
-  
 .modal-t {
   font-size:20px ;
 }
@@ -1467,11 +1466,17 @@ footer .arriba {
     left: 20%;
     transform: translate(-10%, -48%);
   }
-}
-/* MENOR A 500PX*/
-@media screen and (max-width: 300px) {
-  .logo,
-  .logo img {
-    height: 50px;
+  .sobremi .fila .col ul li strong {
+    width: 70px;
+  }
+  .p1{
+    font-size: 12px;
+  }
+  .column-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .es .h11{
+    font-size: 40px;
   }
 }
