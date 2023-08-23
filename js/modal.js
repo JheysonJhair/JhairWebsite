@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const galleryTexts = [
     "Reproductor multimedia diseñado para los amantes de la música y el video en una sola plataforma incluyendo un descargador.",
     "Plataforma en línea que revoluciona la forma en que se venden y gestionan los boletos para el comedor universitario.",
-    "...",
+    "En proceso ...",
     "Empresa especializada en el desarrollo de software, su enfoque se basa en la creación de soluciones tecnológicas personalizadas que atiendan las necesidades del cliente.",
     "Aplicación diseñada para ayudarte a calcular y gestionar tus finanzas personales de manera eficiente.",
     "Plataforma de software de escritorio que tiene como objetivo mejorar la eficiencia y la precisión en la gestión de encomiendas para empresas de transporte y logística.",

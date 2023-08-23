@@ -1129,6 +1129,30 @@ footer .arriba {
   font-size: 18px;
   scroll-behavior: smooth;
 }
+
+/*------------------------------------*/
+/* EXTRA */
+/*------------------------------------*/
+
+/* Estilos para los campos requeridos */
+.required {
+  color: red;
+  margin-left: 5px;
+}
+
+/* Estilos para resaltar campos obligatorios no completados */
+input:required:invalid, textarea:required:invalid {
+  border-color: red;
+}
+
+/* Estilos para mostrar mensaje de error */
+input:required:invalid + label::after, textarea:required:invalid + label::after {
+  content: " (Campo obligatorio)";
+  color: red;
+  font-size: 90%;
+}
+
+
 /*------------------------------------*/
 /* SECCION RESPONSIVE */
 /*------------------------------------*/
