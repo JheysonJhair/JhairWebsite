@@ -13,44 +13,68 @@ document.addEventListener("DOMContentLoaded", function () {
     "https://github.com/JheysonJhair/",
     "https://github.com/JheysonJhair/",
     "https://github.com/JheysonJhair/Presupuesto-Angular",
-    "https://github.com/JheysonJhair/VideoPlayer-Angular",
     "https://github.com/JheysonJhair/SistemaEncomienda-Java",
     "https://github.com/JheysonJhair/IPCalculator-Java",
+    "https://github.com/JheysonJhair/CalculadoraCientifica-Java",
     "https://github.com/JheysonJhair/SistemaVenta-Java",
     "https://github.com/JheysonJhair/",
+    "https://github.com/JheysonJhair/FT_Jheyted_ReactNative",
     "https://github.com/JheysonJhair/",
-    "",
+    "https://github.com/JheysonJhair/",
   ];
 
   const galleryTexts = [
-    "Reproductor multimedia diseñado para satisfacer las necesidades de los amantes de la música y el video en una sola plataforma incluyendo un descargador.",
+    "Reproductor multimedia diseñado para los amantes de la música y el video en una sola plataforma incluyendo un descargador.",
     "Plataforma en línea que revoluciona la forma en que se venden y gestionan los boletos para el comedor universitario.",
-    "Plataforma en línea que combina tecnología avanzada y una experiencia interactiva para permitir a los clientes crear y cotizar su automóvil ideal de manera personalizada.",
-    "Empresa especializada en el desarrollo de software a medida. Nuestro enfoque se basa en la creación de soluciones tecnológicas personalizadas que atiendan las necesidades del cliente.",
-    "EIPRES es una aplicación diseñada para ayudarte a calcular y gestionar tus finanzas personales de manera eficiente.",
-    "Plataforma de reproducción de videos perfecta para disfrutar de tu lista de reproducción de videos favoritos",
+    "...",
+    "Empresa especializada en el desarrollo de software, su enfoque se basa en la creación de soluciones tecnológicas personalizadas que atiendan las necesidades del cliente.",
+    "Aplicación diseñada para ayudarte a calcular y gestionar tus finanzas personales de manera eficiente.",
     "Plataforma de software de escritorio que tiene como objetivo mejorar la eficiencia y la precisión en la gestión de encomiendas para empresas de transporte y logística.",
     "Herramienta de software de escritorio diseñada para realizar cálculos y conversiones de direcciones IP o tambien la configuración de redes.",
+    "Herramienta poderosa diseñada para desbloquear las complejidades del mundo de las matemáticas y la ciencia.",
     "Plataforma de venta en línea que combina tecnología avanzada con una interfaz amigable para proporcionar a los usuarios una experiencia de compra sin complicaciones.",
-    "THE MINIMUN DANGER es un juego de plataformas para todos los amantes de las aventuras clásicas. Inspirado por el icónico Mario Bros",
-    "PAC-MAN Retro Adventure es un juego para Android que captura la esencia y la emoción del icónico PAC-MAN original.",
-    "...",
-
+    "Plataforma de proceso de cotización de autos, proporcionando a los usuarios una plataforma intuitiva y poderosa para obtener información precisa sobre el valor de los vehículos.",
+    "Plataforma te ayuda a gestionar tu inventario, crear menús personalizados, agilizar el proceso de pedidos y brindar un servicio excepcional a tus clientes.",
+    "Juego de plataformas para todos los amantes de las aventuras clásicas. Inspirado por el icónico Mario Bros.",
+    "Juego para Android que captura la esencia y la emoción del icónico PAC-MAN original.",
   ];
 
   const galleryImages = [
-    ["../img/font/SOUNDTHEZER.png"],
-    ["../img/font/SALEOFTICKET.png"],
-    ["../img/font/JAMDER.png"],
-    ["../img/font/JHEWEKEEND.png"],
-    ["../img/font/EIPRES.png"],
-    ["../img/font/PLAYVIDEO.png"],
-    ["../img/font/MARVISUR.png"],
-    ["../img/font/IP.png"],
-    ["../img/font/SIVEN.png"],
-    ["../img/font/TMD.jpeg"],
-    ["../img/font/PACMAN.png"],
+    ["../img/font/soundthezer.webp"],
+    ["../img/font/saleofticket.webp"],
     ["../img/font/"],
+    ["../img/font/jhewekeend.webp"],
+    ["../img/font/eipres.webp"],
+    ["../img/font/marvisur.webp"],
+    ["../img/font/ip.webp"],
+    ["../img/font/Calculadora.webp"],
+    ["../img/font/siven.webp"],
+    ["../img/font/jamder.webp"],
+    ["../img/font/xgoo.webp"],
+    ["../img/font/tmd.webp"],
+    ["../img/font/pacman.webp"],
+  ];
+
+  const skillsIcons = [
+    [
+      "fab fa-node-js",
+      "fab fa-angular",
+      "fas fa-database",
+      "fab fa-git",
+      "fas fa-cloud",
+    ],
+    ["fab fa-angular", "c#", "fas fa-database", "fab fa-git", "fas fa-cloud"],
+    ["fab fa-react", ".N", "fas fa-database", "fab fa-git"],
+    ["fab fa-html5", "fab fa-css3-alt", "fab fa-js"],
+    ["fab fa-angular", "fab fa-git"],
+    ["fab fa-java", "fas fa-database", "fab fa-git"],
+    ["fab fa-java", "fab fa-git"],
+    ["fab fa-java"],
+    ["fab fa-java", "fas fa-database", "fab fa-git"],
+    ["fab fa-java", "fab fa-git"],
+    ["fab fa-react", "fas fa-cloud", "fab fa-git", "fas fa-code"],
+    ["c++"],
+    ["c++"],
   ];
 
   galleryArray.forEach((item, index) => {
@@ -83,13 +107,36 @@ document.addEventListener("DOMContentLoaded", function () {
   function updateModalContent() {
     const currentItem = galleryArray[currentIndex];
     const title = currentItem.querySelector(".img-caption").textContent;
-    modalTitle.textContent = "Proyecto:  "+title;
+    modalTitle.textContent = "Proyecto: " + title;
     modalImages.innerHTML = "";
 
     const imagePaths = galleryImages[currentIndex];
     const imgElement = document.createElement("img");
-    imgElement.src = "seets/" + imagePaths[0]; 
+    imgElement.src = "seets/" + imagePaths[0];
     modalImages.appendChild(imgElement);
+
+    const skillsContainer = document.querySelector(".modal-skills");
+    skillsContainer.innerHTML = "";
+
+    skillsIcons[currentIndex].forEach((iconClass) => {
+      const skillItem = document.createElement("div");
+
+      if (isValidFontAwesomeIcon(iconClass)) {
+        const iconElement = document.createElement("i");
+        iconElement.className = iconClass;
+        skillItem.appendChild(iconElement);
+      } else {
+        const textNode = document.createTextNode(iconClass);
+        skillItem.className = iconClass;
+        skillItem.appendChild(textNode);
+      }
+
+      skillsContainer.appendChild(skillItem);
+    });
+
+    function isValidFontAwesomeIcon(iconClass) {
+      return iconClass.startsWith("fab") || iconClass.startsWith("fas");
+    }
 
     const linkButton = document.createElement("a");
     linkButton.href = galleryLinks[currentIndex];

@@ -186,7 +186,7 @@ header {
 /*contenedor home*/
 .container {
   background: linear-gradient(to top, rgb(30, 35, 38), rgba(30, 35, 38, 0.817)),
-    url(../img/Font.jpeg);
+    url(../img/webp/Font.webp);
   background-size: cover;
   padding: 0rem 7rem;
 }
@@ -593,7 +593,7 @@ header {
     width: 0%;
   }
   100% {
-    width: 40%;
+    width: 60%;
   }
 }
 /**/
@@ -606,20 +606,7 @@ header {
     width: 0%;
   }
   100% {
-    width: 50%;
-  }
-}
-/**/
-.skills .skill .net {
-  width: 0%;
-  animation: 2s net forwards;
-}
-@keyframes net {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 40%;
+    width: 60%;
   }
 }
 /*---------------------------*/
@@ -731,6 +718,7 @@ header {
   height: 100%;
   object-fit: cover;
   display: block;
+  opacity: 0.6; /* Ajusta este valor para cambiar la opacidad (0.0 - 1.0) */
 }
 /* Hover imagen texto*/
 .hover-galeria {
@@ -811,7 +799,8 @@ header {
 .galeria-work {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: initial;
+  gap: 20px;
 }
 /* Caja de imagenes y texto */
 .cont-work {
@@ -820,6 +809,11 @@ header {
   height: 300px;
   overflow: hidden;
   margin-bottom: var(--espacios-contenido);
+}
+.cont-work h4 {
+  font-family: var(--font_title1);
+  color: #ffffff8c;
+  font-size: 20px;
 }
 /* Caja de imagenes */
 .img-work {
@@ -833,7 +827,7 @@ header {
   height: 100%;
   width: 100%;
   filter: brightness(0.7) blur(2px);
-  transition: filter 0.3s; 
+  transition: filter 0.3s;
   object-fit: cover;
 }
 .img-work img:hover {
@@ -847,7 +841,7 @@ header {
   transform: translate(-50%, -50%);
   font-size: 40px;
   font-family: var(--font_title1);
-  color: white;
+  color: rgb(167, 185, 189);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   z-index: 0;
 }
@@ -864,12 +858,57 @@ header {
   font-weight: 300;
 }
 
+.link-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+  z-index: 1;
+}
+/* Estilos para el contenedor de aptitudes en el modal */
+.modal-skills {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 20px;
+  z-index: 1;
+}
+
+/* Estilos para los iconos de aptitudes */
+.modal-skills div i {
+  color: #343541;
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 33px;
+  height: 33px;
+}
+
+.modal-skills div {
+  line-height: 70px;
+  color: #343541;
+  background-color: #fbfbfbc4;
+  padding: 3px;
+  border-radius: 50%;
+  font-size: 21px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 33px;
+  height: 33px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
 /* ----------------------------------------------*/
 /*                 CONTACTO                     */
 /* ----------------------------------------------*/
 /*fondo contacto*/
 .contacto {
-  background-image: url(../img/contact_bg.png);
+  background-image: url(../img/webp/contact_bg.webp);
   background-color: #1e2326;
   color: #fff;
   padding: 50px 0;
@@ -939,6 +978,7 @@ header {
 /*imagen columna mapa*/
 .contacto .col img {
   width: 100%;
+  opacity: 0.8;
 }
 /*cuadro informacion*/
 .contacto .col .info {
@@ -990,13 +1030,14 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
 .modal-content p {
-  color: #bdbdbd;
+  color: #ffffffb1;
   text-align: justify;
   margin-top: 15px;
+  margin-bottom: 45px;
   margin-left: 20px;
   margin-right: 20px;
   font-size: 17px;
@@ -1383,15 +1424,28 @@ footer .arriba {
 }
 /* MENOR A 500PX*/
 @media screen and (max-width: 500px) {
-.modal-t {
-  font-size:20px ;
-}
-.modal-content {
-  padding-bottom: 20px;
-  padding-top: 20px;
-  width: 100%;
-  height: auto;
-}
+  .modal-images img {
+    width: 90%;
+    max-width: none;
+    margin-top: 10px;
+    background-size: cover;
+    background-position: center center;
+  }
+  .modal-t {
+    font-size: 20px;
+  }
+  .modal-content {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+    height: auto;
+  }
+  .link-button {
+    position: relative;
+  }
+  .modal-skills {
+    position: relative;
+  }
   .hireMe__button a {
     padding: 0.5rem 1rem;
     border-radius: 7px;
@@ -1473,7 +1527,7 @@ footer .arriba {
     display: flex;
     flex-direction: column;
   }
-  .es .h11{
+  .es .h11 {
     font-size: 40px;
   }
 }
