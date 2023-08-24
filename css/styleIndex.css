@@ -986,7 +986,6 @@ header {
   top: 35%;
   background-color: #252a2e;
   padding: 20px;
-
   left: 40%;
   transform: translate(-30%, -48%);
 }
@@ -1541,8 +1540,8 @@ input:required:invalid + label::after, textarea:required:invalid + label::after 
   }
   .contacto .col .info {
     top: 48%;
-    left: 20%;
-    transform: translate(-10%, -48%);
+    left: 25%;
+    transform: translate(-25%, -48%);
   }
   .sobremi .fila .col ul li strong {
     width: 70px;
